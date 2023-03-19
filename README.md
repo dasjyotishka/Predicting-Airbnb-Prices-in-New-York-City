@@ -2,7 +2,7 @@
 This repository contains the code for predicting Airbnb prices in New York City using regression models.
 
 ## Dataset
-The dataset used in this project is available on <b><u>Inside Airbnb</u></b>. It consists of detailed listings data for New York City.
+The dataset used in this project is available on <b><u><a>https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data</a></u></b>. It consists of detailed listings data for New York City.
 
 ## Prerequisites
 1. Python 3

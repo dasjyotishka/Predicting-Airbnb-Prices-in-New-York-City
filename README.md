@@ -64,7 +64,7 @@ We use the scikit-learn library to implement the models.
   <h3>Interpretation: </h3>
   We use the yellowbrick library to visualize the results and comparison among different models using each metric of evaluation, which helps us to understand the best model according to a particular metric for the prediction of Airbnb prices.
   
-  <img src="https://user-images.githubusercontent.com/127759119/226191125-3eabaf3a-cd78-48a9-a2a1-41a2e67e4e90.png" width="500">
+  <img src="https://user-images.githubusercontent.com/127759119/226191125-3eabaf3a-cd78-48a9-a2a1-41a2e67e4e90.png" width="1000">
 
 ## Results
 From all the utilised models, we clearly see that the ensemble methods outperform the classic ML models. Moreover, XGBoost and CATBoost appeared as the best models for prediction of prices. The hypertuning of the XGBoost model resulted in an accuracy of 62.87% on the test dataset and 78.4% on the train data, and the best RMSE value of 0.42, among all models.

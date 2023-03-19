@@ -2,26 +2,9 @@
 This project aims to predict the prices of Airbnb listings in New York City based on various features using regression models. It uses a dataset of Airbnb listings in New York City, which includes information such as location, room type, number of reviews, availability, and host name. 
 
 ## Dataset
-The dataset used in this project is available on <b><u><a>https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data</a></u></b>. It contains information on over 48,000 Airbnb listings in New York City. The dataset includes the following features:
-1. id: the unique ID of the listing
-2. name: the name of the listing
-3. host_id: the unique ID of the host
-4. host_name: the name of the host
-5. neighbourhood_group: the borough in which the listing is located (e.g., Brooklyn, Manhattan, Queens, Staten Island, Bronx)
-6. neighbourhood: the neighbourhood in which the listing is located
-7. latitude: the latitude of the listing
-8. longitude: the longitude of the listing
-9. room_type: the type of room (e.g., private room, entire home/apt, shared room)
-10. price: the price per night of the listing
-11. minimum_nights: the minimum number of nights required to book the listing
-12. number_of_reviews: the number of reviews the listing has received
-13. last_review: the date of the last review
-14. reviews_per_month: the number of reviews per month
-15. calculated_host_listings_count: count of listings per host_id
-16. availability_365: the number of days the listing is available for booking in the next 365 days
+The dataset used in this project is available on <b><u><a>https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data</a></u></b>. It contains information on over 48,000 Airbnb listings in New York City.
 
 ## Approach
-The approach used in this project involves data preprocessing, exploratory data analysis, feature engineering, and model training and evaluation. The main machine learning models used in this project are linear regression, decision tree, and random forest.
 The approach used in this project involves several steps ranging from data preprocessing, exploratory data analysis, feature engineering, to model selection, training and evaluation. The following are the main steps involved:
 
 <h3>Exploratory data analysis (EDA):</h3> We use visualization techniques to better understand the distribution and relationship of the dataset features, and to gain insights about the data. The EDA helps us to decide which features to use in the modeling process. The process is as follows:
@@ -76,12 +59,10 @@ From all the utilised models, we clearly see that the ensemble methods outperfor
 2. Numpy
 3. Matplotlib
 4. Seaborn
-5. Scikit-Learn (pre-processing, model_selection, metrics)
-6. Sklearn linear_model, DecisionTreeRegressor
-7. Sklearn ensemble (RandomForestRegressor, ExtraTreesRegressor, GradientBoostingRegressor)
-8. XGBoost
-9. CATBoost
-10. Yellowbrick
+5. Scikit-Learn 
+6. XGBoost
+7. CATBoost
+8. Yellowbrick
 
   <b>You can install these libraries using the following command:</b>
 'pip install pandas numpy matplotlib seaborn scikit-learn xgboost catboost yellowbrick'

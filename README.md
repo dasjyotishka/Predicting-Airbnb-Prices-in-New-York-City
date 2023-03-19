@@ -26,26 +26,17 @@ The approach used in this project involves several steps ranging from data prepr
 
 <h3>Exploratory data analysis (EDA):</h3> We use visualization techniques to better understand the distribution and relationship of the dataset features, and to gain insights about the data. The EDA helps us to decide which features to use in the modeling process. The process is as follows:
 1. We visualize different features (such as room_type, neighbourhood_group, and neighbourhood), and there relationship with the target variable (price).
-
-![image](https://user-images.githubusercontent.com/127759119/226188898-323b503b-a55e-405f-94f7-f425cab546cf.png)
-
-2. We also analyse the relation between the variable themselves (such as Distribution of neighbourhood_group and room_type with Respect to Latitude and Longitude).
-
-![image](https://user-images.githubusercontent.com/127759119/226188732-592ab329-56c0-4253-af06-d453d0f03f97.png)
-
-3. Next, we visualize the distribution of the target variable (price) and its log transformations. 
-
-![image](https://user-images.githubusercontent.com/127759119/226188754-893484a7-2c7d-45bc-b782-37eab9ab771d.png)
-
-4. We, also visualise the correlation among different numerical features of the dataset using seaborn heatmap.
-
-![image](https://user-images.githubusercontent.com/127759119/226188807-abf3acda-a3d0-451e-9d82-ee2c3132812d.png)
-
+<img src="https://user-images.githubusercontent.com/127759119/226188898-323b503b-a55e-405f-94f7-f425cab546cf.png" width="500">
+We also analyse the relation between the variable themselves (such as Distribution of neighbourhood_group and room_type with Respect to Latitude and Longitude).
+<img src="https://user-images.githubusercontent.com/127759119/226188732-592ab329-56c0-4253-af06-d453d0f03f97.png" width="500">
+Next, we visualize the distribution of the target variable (price) and its log transformations.
+<img src="https://user-images.githubusercontent.com/127759119/226188754-893484a7-2c7d-45bc-b782-37eab9ab771d.png" width="500">
+We, also visualise the correlation among different numerical features of the dataset using seaborn heatmap.
+<img src="https://user-images.githubusercontent.com/127759119/226188807-abf3acda-a3d0-451e-9d82-ee2c3132812d.png" width="500">
 <h3>Data cleaning and preparation:</h3>
  The dataset contains missing values and some outliers, which need to be addressed. 
 1. We detect the outliers  and remove these in target variable (price).
-  
-  ![image](https://user-images.githubusercontent.com/127759119/226188780-5c8db7be-c786-45b7-82d9-005140a6492e.png)
+<img src="https://user-images.githubusercontent.com/127759119/226188780-5c8db7be-c786-45b7-82d9-005140a6492e.png" width="500">
   
 2. Next, we we fill the missing values in reviews_per_month, drop irrelevant columns, and apply the log transfoirmation to target variable (price).
 3. Finally, we split the dataset into train and test with 1:4 ratio. 
@@ -65,15 +56,15 @@ We use the scikit-learn library to implement the models.
   <h3>Model evaluation: </h3>
   We evaluate the performance of each model using various metrics, such as r2 score for test data, mean squared error (MSE), mean absolute error (MAE), and R-mean    squared error. We also use cross-validation to assess the generalization performance of the models.
   
-  ![image](https://user-images.githubusercontent.com/127759119/226189914-839ab9f3-4548-422c-bb92-185fb6aa4d31.png)
-
+  <img src="https://user-images.githubusercontent.com/127759119/226189914-839ab9f3-4548-422c-bb92-185fb6aa4d31.png" width="500">
+  
   <h3>Hyperparameter tuning:</h3>
   We use random search on various parameters (such as learning rate, max_depth, n_estimators, min_samples_split, min_samples_leaf, subsample, max_features, and many more) to find the optimal hyperparameters for each model, in order to improve the model's performance.
 
   <h3>Interpretation: </h3>
   We use the yellowbrick library to visualize the results and comparison among different models using each metric of evaluation, which helps us to understand the best model according to a particular metric for the prediction of Airbnb prices.
   
-  ![image](https://user-images.githubusercontent.com/127759119/226191125-3eabaf3a-cd78-48a9-a2a1-41a2e67e4e90.png)
+  <img src="https://user-images.githubusercontent.com/127759119/226191125-3eabaf3a-cd78-48a9-a2a1-41a2e67e4e90.png" width="500">
 
 ## Results
 From all the utilised models, we clearly see that the ensemble methods outperform the classic ML models. Moreover, XGBoost and CATBoost appeared as the best models for prediction of prices. The hypertuning of the XGBoost model resulted in an accuracy of 62.87% on the test dataset and 78.4% on the train data, and the best RMSE value of 0.42, among all models.

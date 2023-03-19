@@ -37,12 +37,18 @@ We, also visualise the correlation among different numerical features of the dat
 We use the scikit-learn library to implement the models.
 
   <h3>Model evaluation: </h3>
-  We evaluate the performance of each model using various metrics, such as r2 score for test data, mean squared error (MSE), mean absolute error (MAE), and R-mean    squared error. We also use cross-validation to assess the generalization performance of the models.
+  We evaluate the performance of each model using various metrics, such as r2 score for test data, mean squared error (MSE), mean absolute error (MAE), and R-mean squared error. We also use cross-validation to assess the generalization performance of the models.
   
-  <img src="https://user-images.githubusercontent.com/127759119/226189914-839ab9f3-4548-422c-bb92-185fb6aa4d31.png" width="500">
+  
+  
+ 
+   <img src="https://user-images.githubusercontent.com/127759119/226189914-839ab9f3-4548-422c-bb92-185fb6aa4d31.png" width="500">
+  
+  
   
   <h3>Hyperparameter tuning:</h3>
   We use random search on various parameters (such as learning rate, max_depth, n_estimators, min_samples_split, min_samples_leaf, subsample, max_features, and many more) to find the optimal hyperparameters for each model, in order to improve the model's performance.
+
 
   <h3>Interpretation: </h3>
   We use the yellowbrick library to visualize the results and comparison among different models using each metric of evaluation, which helps us to understand the best model according to a particular metric for the prediction of Airbnb prices.

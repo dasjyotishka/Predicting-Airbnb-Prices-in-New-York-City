@@ -41,7 +41,7 @@ The approach used in this project involves several steps ranging from data prepr
 
 ![image](https://user-images.githubusercontent.com/127759119/226188807-abf3acda-a3d0-451e-9d82-ee2c3132812d.png)
 
-<b><u>Data cleaning and preparation:</b></u>
+<h3>Data cleaning and preparation:</h3>
  The dataset contains missing values and some outliers, which need to be addressed. 
 1. We detect the outliers  and remove these in target variable (price).
   
@@ -50,27 +50,27 @@ The approach used in this project involves several steps ranging from data prepr
 2. Next, we we fill the missing values in reviews_per_month, drop irrelevant columns, and apply the log transfoirmation to target variable (price).
 3. Finally, we split the dataset into train and test with 1:4 ratio. 
 
-  <u><b>Feature engineering: </u></b>
+  <h3>Feature engineering: </h3>
   We create new features from the existing ones to help the machine learning algorithms better capture the patterns in the data. 
 1. We use one-hot encoding on the neighbourhood_group, neighbourhood, room_type variables resulting in 235 features in total.
 2. Next, we use standard scale to normalise the features.
 
-  <u><b>Model selection: </u></b></h3>
+  <h3>Model selection: </h3>
   We experiment with various machine learning models which includes 
 1. Classic ML mosels such as ridge regression, lasso regression, decision tree regression.
 2. Ensemble Bagging Methods such as random forest, extra trees.
 3. Ensemble Boosting methods such as gradient boosting, XGBoost, and CATBoost regression. 
 We use the scikit-learn library to implement the models.
 
-  <u><b>Model evaluation: </u></b>
+  <h3>Model evaluation: </h3>
   We evaluate the performance of each model using various metrics, such as r2 score for test data, mean squared error (MSE), mean absolute error (MAE), and R-mean    squared error. We also use cross-validation to assess the generalization performance of the models.
   
   ![image](https://user-images.githubusercontent.com/127759119/226189914-839ab9f3-4548-422c-bb92-185fb6aa4d31.png)
 
-  <u><b>Hyperparameter tuning:</u></b>
+  <h3>Hyperparameter tuning:</h3>
   We use random search on various parameters (such as learning rate, max_depth, n_estimators, min_samples_split, min_samples_leaf, subsample, max_features, and many more) to find the optimal hyperparameters for each model, in order to improve the model's performance.
 
-  <u><b>Interpretation: </u></b>
+  <h3>Interpretation: </h3>
   We use the yellowbrick library to visualize the results and comparison among different models using each metric of evaluation, which helps us to understand the best model according to a particular metric for the prediction of Airbnb prices.
   
   ![image](https://user-images.githubusercontent.com/127759119/226191125-3eabaf3a-cd78-48a9-a2a1-41a2e67e4e90.png)

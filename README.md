@@ -24,23 +24,27 @@ The dataset used in this project is available on <b><u><a>https://www.kaggle.com
 The approach used in this project involves data preprocessing, exploratory data analysis, feature engineering, and model training and evaluation. The main machine learning models used in this project are linear regression, decision tree, and random forest.
 The approach used in this project involves several steps ranging from data preprocessing, exploratory data analysis, feature engineering, to model selection, training and evaluation. The following are the main steps involved:
 
-###Exploratory data analysis (EDA): We use visualization techniques to better understand the distribution and relationship of the dataset features, and to gain insights about the data. The EDA helps us to decide which features to use in the modeling process. The process is as follows:
+<h3>Exploratory data analysis (EDA):</h3> We use visualization techniques to better understand the distribution and relationship of the dataset features, and to gain insights about the data. The EDA helps us to decide which features to use in the modeling process. The process is as follows:
 1. We visualize different features (such as room_type, neighbourhood_group, and neighbourhood), and there relationship with the target variable (price).
 
 ![image](https://user-images.githubusercontent.com/127759119/226188898-323b503b-a55e-405f-94f7-f425cab546cf.png)
 
 2. We also analyse the relation between the variable themselves (such as Distribution of neighbourhood_group and room_type with Respect to Latitude and Longitude).
+
 ![image](https://user-images.githubusercontent.com/127759119/226188732-592ab329-56c0-4253-af06-d453d0f03f97.png)
 
 3. Next, we visualize the distribution of the target variable (price) and its log transformations. 
+
 ![image](https://user-images.githubusercontent.com/127759119/226188754-893484a7-2c7d-45bc-b782-37eab9ab771d.png)
 
 4. We, also visualise the correlation among different numerical features of the dataset using seaborn heatmap.
+
 ![image](https://user-images.githubusercontent.com/127759119/226188807-abf3acda-a3d0-451e-9d82-ee2c3132812d.png)
 
 <b><u>Data cleaning and preparation:</b></u>
  The dataset contains missing values and some outliers, which need to be addressed. 
 1. We detect the outliers  and remove these in target variable (price).
+  
   ![image](https://user-images.githubusercontent.com/127759119/226188780-5c8db7be-c786-45b7-82d9-005140a6492e.png)
   
 2. Next, we we fill the missing values in reviews_per_month, drop irrelevant columns, and apply the log transfoirmation to target variable (price).
@@ -60,6 +64,7 @@ We use the scikit-learn library to implement the models.
 
   <u><b>Model evaluation: </u></b>
   We evaluate the performance of each model using various metrics, such as r2 score for test data, mean squared error (MSE), mean absolute error (MAE), and R-mean    squared error. We also use cross-validation to assess the generalization performance of the models.
+  
   ![image](https://user-images.githubusercontent.com/127759119/226189914-839ab9f3-4548-422c-bb92-185fb6aa4d31.png)
 
   <u><b>Hyperparameter tuning:</u></b>
@@ -67,6 +72,7 @@ We use the scikit-learn library to implement the models.
 
   <u><b>Interpretation: </u></b>
   We use the yellowbrick library to visualize the results and comparison among different models using each metric of evaluation, which helps us to understand the best model according to a particular metric for the prediction of Airbnb prices.
+  
   ![image](https://user-images.githubusercontent.com/127759119/226191125-3eabaf3a-cd78-48a9-a2a1-41a2e67e4e90.png)
 
 ## Results
